@@ -1,5 +1,5 @@
 // 初期値（15分）
-let initialMinutes = 15;
+let initialMinutes = 1;
 let timeA = initialMinutes * 60;
 let timeB = initialMinutes * 60;
 
@@ -49,7 +49,7 @@ switchBtn.addEventListener("click", () => {
   timerId = setInterval(tick, 1000);
 });
 
-onst resetBtn = document.getElementById("resetBtn");
+const resetBtn = document.getElementById("resetBtn");
 
 resetBtn.addEventListener("click", () => {
   clearInterval(timerId);
